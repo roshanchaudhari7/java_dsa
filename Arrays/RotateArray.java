@@ -39,5 +39,6 @@ public class RotateArray {
 		System.out.println( );
 		System.out.println("Array after rotation:");
 		printArray(arr);	
+		sc.close();
 	}
 }

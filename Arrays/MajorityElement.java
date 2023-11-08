@@ -20,5 +20,6 @@ public class MajorityElement {
             nums[i] = sc.nextInt();
         }
         System.out.println(majorityElement(nums));
+        sc.close();
     }
 }

@@ -41,5 +41,6 @@ public class SquaresOfSortedArray {
 		System.out.println( );
 		System.out.println("After squaring: ");
 		printArray(ans);
+		sc.close();
 	}
 }
