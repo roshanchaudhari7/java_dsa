@@ -1,6 +1,8 @@
 
 //  169. Majority Element
 
+package Array;
+
 import java.util.Arrays;
 import java.util.Scanner;
 public class MajorityElement {

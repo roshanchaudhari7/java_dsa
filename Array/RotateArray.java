@@ -1,6 +1,8 @@
 
 //	189. Rotate Array
 
+package Array;
+
 import java.util.Scanner;
 public class RotateArray {
     private static void reverse(int[] arr,int i, int j){

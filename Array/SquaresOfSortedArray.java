@@ -1,6 +1,8 @@
 
 //	977. Squares of a Sorted Array
 
+package Array;
+
 import java.util.Scanner;
 public class SquaresOfSortedArray {
     static int[] sortedSquares(int[] arr) {
