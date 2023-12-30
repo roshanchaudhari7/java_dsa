@@ -9,14 +9,16 @@ public class MiddleOfTheLinkedList {
     public static class ListNode {
         int val;
         ListNode next;
-        ListNode(int val){
+
+        ListNode(int val) {
             this.val = val;
         }
     }
+
     public static ListNode middleNode(ListNode head) {
         ListNode first = head;
         ListNode second = head;
-        while(second != null && second.next != null) {
+        while (second != null && second.next != null) {
             first = first.next;
             second = second.next.next;
         }
@@ -31,6 +33,7 @@ public class MiddleOfTheLinkedList {
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         ListNode a = new ListNode(1);
         ListNode b = new ListNode(2);
