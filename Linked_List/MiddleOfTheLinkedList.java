@@ -3,7 +3,7 @@
 
 package Linked_List;
 
-import java.util.List;
+import java.util.*;
 
 public class MiddleOfTheLinkedList {
     public static class ListNode {
