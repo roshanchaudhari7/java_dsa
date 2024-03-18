@@ -1,11 +1,21 @@
 
         // 452. Minimum Number of Arrows to Burst Balloons
+import java.util.Arrays;
 import java.util.Scanner;
 public class MinimumNumberofArrowstoBurstBalloons {
 
     public static int findMinArrowShots(int[][] points) {
-        int ans = 0;
-        return ans;
+        Arrays.sort(points, (a, b) -> Integer.compare(a[1], b[1]));
+        int arrows = 1, arrowsPosition = points[0][1];
+        for(int i = 0; i < points.length; i++){
+            if(points[i][0] <= arrowsPosition){
+                continue;
+                
+            }
+            arrows++;
+            arrowsPosition = points[i][1];
+        }
+        return arrows;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,6 +25,7 @@ public class MinimumNumberofArrowstoBurstBalloons {
             points[i][0] = sc.nextInt();
             points[i][1] = sc.nextInt();
         }
-        System.out.println(findMinArrowShots(points));
+        System.out.println("The balloons can be burst by " + findMinArrowShots(points) + " arrows.");
+        sc.close();
     }
 }
